@@ -231,7 +231,7 @@ WHERE c.churn_risk_score > 0.5;`
               <div className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium mb-2">Schema Template</label>
-                  <div className="flex gap-2">
+                  <div className="grid w-full grid-cols-2 gap-2">
                     <select 
                       className="flex-1 p-2 border rounded-md"
                       onChange={(e) => setSelectedTemplate(e.target.value)}
