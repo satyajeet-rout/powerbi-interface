@@ -13,7 +13,8 @@ const PowerBIInterface = () => {
   const [selectedTemplate, setSelectedTemplate] = useState('');
   const [newTemplateSQL, setNewTemplateSQL] = useState('');
 
-  const currentTimestamp = new Date().toISOString().replace('T', ' ').slice(0, 19);
+  // const currentTimestamp = new Date().toISOString().replace('T', ' ').slice(0, 19);
+  const currentTimestamp = new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata', hour12: false }).replace(',', '');
 
   // Define a type for schema templates
   type SchemaTemplates = {
